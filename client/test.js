@@ -2,10 +2,11 @@
 const webhookUrl = "https://mishra0510.app.n8n.cloud/webhook-test/coaching-lead";
 
 const lead = {
-  name: "Rahul Kumar",
-  email: "rahul33.test@gmail.com",
-  phone: "9873343210",
-  course: "Full Stack Development"
+  idempotencyKey: "test-lead-002",
+  name: "LuckyAbhi ",
+  email: "mishra10@gmail.com",
+  phone: "9065991886",
+  course: "UG in Geography"
 };
 
 async function submitLead() {
