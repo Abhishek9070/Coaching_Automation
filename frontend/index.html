@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Enquiry | Coaching Institute</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="form-card">
+        <h1>Course Enquiry</h1>
+        <p>Interested in learning with us? Submit your details.</p>
+
+        <form id="leadForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="10-digit phone number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="course">Select Course</label>
+            <select id="course" name="course" required>
+              <option value="">Choose a course</option>
+              <option value="Full Stack Development">
+                Full Stack Development
+              </option>
+              <option value="AI Engineer">AI Engineer</option>
+              <option value="Data Science">Data Science</option>
+              <option value="Web Development">Web Development</option>
+            </select>
+          </div>
+
+          <button type="submit" id="submitBtn">Submit Enquiry</button>
+
+          <p id="message"></p>
+        </form>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
